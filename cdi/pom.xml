@@ -99,10 +99,12 @@
         <dependency>
             <groupId>org.infinispan</groupId>
             <artifactId>infinispan-cdi-embedded</artifactId>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.infinispan</groupId>
             <artifactId>infinispan-jcache</artifactId>
+            <scope>provided</scope>
         </dependency>
 
         <!-- Test dependencies -->
@@ -136,6 +138,9 @@
                         <manifest>
                             <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
                         </manifest>
+                        <manifestEntries>
+                            <Dependencies>org.infinispan:jdg-6.6 services, org.infinispan.cdi:jdg-6.6 meta-inf, org.infinispan.jcache:jdg-6.6 meta-inf services, javax.cache.api:jdg-6.6</Dependencies>
+                        </manifestEntries>
                     </archive>
                 </configuration>
             </plugin>

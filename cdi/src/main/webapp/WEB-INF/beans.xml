@@ -27,10 +27,7 @@
 
     <!-- Enable JCACHE interceptors -->
     <interceptors>
-        <class>org.infinispan.jcache.annotation.InjectedCachePutInterceptor</class>
-        <class>org.infinispan.jcache.annotation.InjectedCacheResultInterceptor</class>
-        <class>org.infinispan.jcache.annotation.InjectedCacheRemoveEntryInterceptor</class>
-        <class>org.infinispan.jcache.annotation.InjectedCacheRemoveAllInterceptor</class>
+        <class>org.infinispan.cdi.interceptor.CacheResultInterceptor</class>
     </interceptors>
 
 </beans>
