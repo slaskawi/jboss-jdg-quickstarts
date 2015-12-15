@@ -1,11 +1,13 @@
 package org.jboss.as.quickstarts.datagrid.spring.core.client;
 
+import java.io.Serializable;
+
 /**
  * Main domain object.
  *
  * @author Sebastian Laskawiec
  */
-public class Client {
+public class Client implements Serializable {
 
     private int id;
     private String firstName;

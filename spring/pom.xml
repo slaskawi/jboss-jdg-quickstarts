@@ -53,7 +53,7 @@
         </dependency>
         <dependency>
             <groupId>org.infinispan</groupId>
-            <artifactId>infinispan-spring4-embedded</artifactId>
+            <artifactId>infinispan-spring4-remote</artifactId>
             <version>${version.org.infinispan}</version>
             <exclusions>
                 <exclusion>
@@ -61,6 +61,11 @@
                     <artifactId>servlet-api</artifactId>
                 </exclusion>
             </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.infinispan</groupId>
+            <artifactId>infinispan-remote</artifactId>
+            <version>${version.org.infinispan}</version>
         </dependency>
         <dependency>
             <groupId>org.jboss.spec.javax.transaction</groupId>

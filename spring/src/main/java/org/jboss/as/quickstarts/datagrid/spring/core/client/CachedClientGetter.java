@@ -17,9 +17,9 @@ public class CachedClientGetter extends ClientGetter {
         this.clientGetter = clientGetter;
     }
 
-    @Cacheable(value = "clients")
+    @Cacheable(value = "default")
     public List<Client> getBestClients() {
-        return super.getBestClients();
+        return clientGetter.getBestClients();
     }
 
 }
